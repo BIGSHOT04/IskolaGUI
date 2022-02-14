@@ -27,6 +27,19 @@ namespace IskolaGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (listBox1.SelectedIndex==-1)
+            {
+                MessageBox.Show("git get dumb");
+            }
+            else
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }
