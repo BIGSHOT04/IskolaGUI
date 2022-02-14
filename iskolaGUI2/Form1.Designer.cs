@@ -39,23 +39,24 @@ namespace iskolaGUI2
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 76);
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 303);
+            this.listBox1.Size = new System.Drawing.Size(156, 303);
             this.listBox1.TabIndex = 0;
             // 
             // btnBetölt
             // 
-            this.btnBetölt.Location = new System.Drawing.Point(138, 249);
+            this.btnBetölt.Location = new System.Drawing.Point(12, 326);
             this.btnBetölt.Name = "btnBetölt";
             this.btnBetölt.Size = new System.Drawing.Size(75, 23);
             this.btnBetölt.TabIndex = 1;
             this.btnBetölt.Text = "betölt";
             this.btnBetölt.UseVisualStyleBackColor = true;
+            this.btnBetölt.Click += new System.EventHandler(this.btnBetölt_Click);
             // 
             // btnMnetés
             // 
-            this.btnMnetés.Location = new System.Drawing.Point(321, 249);
+            this.btnMnetés.Location = new System.Drawing.Point(93, 326);
             this.btnMnetés.Name = "btnMnetés";
             this.btnMnetés.Size = new System.Drawing.Size(75, 23);
             this.btnMnetés.TabIndex = 2;
@@ -64,16 +65,17 @@ namespace iskolaGUI2
             // 
             // btnTörlés
             // 
-            this.btnTörlés.Location = new System.Drawing.Point(138, 356);
+            this.btnTörlés.Location = new System.Drawing.Point(12, 355);
             this.btnTörlés.Name = "btnTörlés";
             this.btnTörlés.Size = new System.Drawing.Size(75, 23);
             this.btnTörlés.TabIndex = 3;
             this.btnTörlés.Text = "Törlés";
             this.btnTörlés.UseVisualStyleBackColor = true;
+            this.btnTörlés.Click += new System.EventHandler(this.btnTörlés_Click);
             // 
             // btnKilép
             // 
-            this.btnKilép.Location = new System.Drawing.Point(321, 356);
+            this.btnKilép.Location = new System.Drawing.Point(93, 355);
             this.btnKilép.Name = "btnKilép";
             this.btnKilép.Size = new System.Drawing.Size(75, 23);
             this.btnKilép.TabIndex = 4;
@@ -85,14 +87,14 @@ namespace iskolaGUI2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 450);
+            this.ClientSize = new System.Drawing.Size(200, 450);
             this.Controls.Add(this.btnKilép);
             this.Controls.Add(this.btnTörlés);
             this.Controls.Add(this.btnMnetés);
             this.Controls.Add(this.btnBetölt);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "suliidk";
             this.ResumeLayout(false);
 
         }
