@@ -32,7 +32,7 @@ namespace iskolaGUI2
 
         private void btnBetölt_Click(object sender, EventArgs e)
         {
-            foreach (var sor in File.ReadAllLines("nevek.txt"))
+            foreach (var sor in File.ReadAllLines("Nevek.txt"))
             {
                 tanulok.Add(new tanulo(sor));
 
@@ -57,7 +57,10 @@ namespace iskolaGUI2
             try
             {
                 StreamWriter strW = new StreamWriter("nevek.txt");
-
+                // strW.WriteLine(tanulok[listBox1.SelectedIndex].ToString);
+                strW.WriteLine(tanulok[listBox1.SelectedIndex].ToString);
+                strW.Close();
+                MessageBox.Show($"xd?");
             }
             catch (Exception error)
             {
