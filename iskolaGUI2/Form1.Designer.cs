@@ -62,6 +62,7 @@ namespace iskolaGUI2
             this.btnMnetés.TabIndex = 2;
             this.btnMnetés.Text = "mentés";
             this.btnMnetés.UseVisualStyleBackColor = true;
+            this.btnMnetés.Click += new System.EventHandler(this.btnMnetés_Click);
             // 
             // btnTörlés
             // 

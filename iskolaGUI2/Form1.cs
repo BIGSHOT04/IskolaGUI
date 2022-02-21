@@ -50,5 +50,25 @@ namespace iskolaGUI2
             bs.ResetBindings(false);
 
         }
+
+        private void btnMnetés_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                StreamWriter strW = new StreamWriter("nevek.txt");
+
+            }
+            catch (Exception error)
+            {
+
+                throw;
+            }
+
+
+
+
+
+        }
     }
 }
