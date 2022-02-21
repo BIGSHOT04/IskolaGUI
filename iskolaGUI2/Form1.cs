@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO
+using System.IO;
 
 namespace iskolaGUI2
 {
@@ -34,20 +34,20 @@ namespace iskolaGUI2
         {
             foreach (var sor in File.ReadAllLines("nevek.txt"))
             {
-                tanulok.add(new tanulo(sor));
+                tanulok.Add(new tanulo(sor));
 
             }
 
             bs = new BindingSource();
-            bs.datasource = tanulok;
-            List.datasource = bs;
-            ListBox.displaymember = "név";
+            bs.DataSource = tanulok;
+            listBox1.DataSource = bs;
+            listBox1.DisplayMember = "név";
         }
 
         private void btnTörlés_Click(object sender, EventArgs e)
         {
-            tanulók.removeat(listBox1.SelectedIndex);
-            bs.resetbindings(false);
+            tanulok.RemoveAt(listBox1.SelectedIndex);
+            bs.ResetBindings(false);
 
         }
     }
